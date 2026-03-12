@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  width: 400px;
+  font-size: 40px;
+  margin-left: 10px;
+}
+.navbar {
+  display: flex;
+  border: 2px solid seagreen;
+  background-color: seagreen;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5em;
+}
+.nav-elements a {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.nav-elements a:hover {
+  transform: scale(1.1);
+}
+.nav-elements {
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+
+  padding: 0 40px;
+}

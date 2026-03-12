@@ -1,0 +1,48 @@
+.movie_card {
+  border: 2px solid seagreen;
+  box-shadow: 2px 2px 2px seagreen;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: 25em;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.movie_card:hover {
+  transform: translateY(-5px);
+}
+
+.movie_poster {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 70%;
+  width: 100%;
+
+  position: relative;
+}
+.movie_poster img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.fav_btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  font-size: 28px;
+  cursor: pointer;
+
+  color: white !important; /* FORCE */
+}
+
+.fav_btn.active {
+  color: red !important; /* FORCE */
+}
